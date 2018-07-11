@@ -1,0 +1,10 @@
+---
+title: A little introduction to templating with Jinja2
+---
+title: the Problem
+body:
+    - "You want to create text from data"
+    -   
+        - "usually HTML, but any text is possible"
+    - You want to change style and structure independently of content
+    - Control flow or inheritance would be useful for organization
