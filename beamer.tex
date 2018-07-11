@@ -1,0 +1,27 @@
+\documentclass{beamer}
+
+\usetheme{Singapore}
+\usecolortheme{seahorse}
+
+\usepackage{listings}
+
+\lstdefinestyle{bettermonospace}{
+    basicstyle=\ttfamily
+    , gobble=8
+}
+
+\lstset{style=bettermonospace}
+\begin{document}
+
+{% for s in slides %}
+
+\begin{frame}[fragile]{ {{s['title']}} }
+
+    future text
+
+\end{frame}
+
+{% endfor %}
+
+
+\end{document}
