@@ -1,10 +1,20 @@
 ---
 title: A little introduction to templating with Jinja2
+body: |
+    for FoCo PyBeer 07-11
+
+    by Nathan Morrison
+usebullets: no
 ---
 title: the Problem
 body:
-    - "You want to create text from data"
-    -   
-        - "usually HTML, but any text is possible"
+    - "You want to create text from data (usually HTML, but any text is possible)"
     - You want to change style and structure independently of content
     - Control flow or inheritance would be useful for organization
+usebullets: yes
+---
+title: "use templates!"
+body: >
+    Jinja2 uses templates inspired by Django, but can be used for more than just
+    websites.
+usebullets: no

@@ -17,7 +17,20 @@
 
 \begin{frame}[fragile]{ {{s['title']}} }
 
-    future text
+    {% if s['usebullets'] %}
+
+        \begin{itemize}
+            {% for i in s['body'] %}
+            \item {{ i }}
+            {% endfor %}
+        \end{itemize}
+
+    {% else %}
+
+    {{ s['body'] }}
+
+    {% endif %}
+
 
 \end{frame}
 

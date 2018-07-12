@@ -1,0 +1,17 @@
+<html>
+    <body>
+        {% for s in slides %}
+        <h2> {{ s['title'] }} </h2>
+
+        {% if s['usebullets'] %}
+        <ul>
+            {% for i in s['body'] %}
+            <li> {{ i }} </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        {{ s['body'] }}
+        {% endif %}
+        {% endfor %}
+    </body>
+</html>
